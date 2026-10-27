@@ -37,7 +37,7 @@ For a custom domain, add a file called `CNAME` containing only the domain (for e
 
 ## Edit things
 
-- **Add a project:** copy a line in `js/projects.js`, change the fields (the file explains each one) and save. Set `pin:1` to pin it at the top. Add `shot:"assets/shots/name.jpg"` to show a preview image on a pinned card.
+- **Add a project:** copy a line in `js/projects.js`, change the fields (the file explains each one) and save. Set `pin:1` to pin it at the top. Add `shot:"assets/shots/name.jpg"` to show a preview image on the card.
 - **CV:** replace `assets/Harshini-Suresha-CV.pdf` to update the download button.
 - **Add a personal link:** in `index.html`, find the *personal* card. To turn a "link coming soon" box (consumedlog, get in touch, inpassing) into a real link, replace `<div class="item idle">` with `<a class="item" href="YOUR-URL" target="_blank" rel="noopener">`, close it with `</a>`, and add `<span class="go" aria-hidden="true">→</span>` just before the `</a>`.
 - **Status line, tagline, email, footer:** all in `index.html`. The copy-email button uses the address set in `js/app.js` (`var E = ...`).
@@ -53,7 +53,7 @@ then open http://localhost:8000.
 
 ## Features
 
-Search (press `/`, clear with `Esc`) · topic filters with counts · "has live app" filter · pinned projects with screenshots · sort A–Z · "updated X ago" and a recently-updated sort, read live from GitHub (one request, cached for an hour; if GitHub is unreachable the page just hides it) · grid or list view · surprise me · night mode (remembered) · copy email · download CV · back-to-top · seed pop on click · shareable filter links such as `?tag=bio&q=docking` · large preview card for LinkedIn, WhatsApp and email · keyboard and screen-reader friendly · respects "reduce motion" · prints cleanly.
+Search (press `/`, clear with `Esc`) · topic filters with counts · "has live app" filter · screenshots for every project · sort A–Z · "updated X ago" and a recently-updated sort, read live from GitHub (one request, cached for an hour; if GitHub is unreachable the page just hides it) · grid or list view · surprise me · night mode (remembered) · copy email · download CV · back-to-top · seed pop on click · shareable filter links such as `?tag=bio&q=docking` · large preview card for LinkedIn, WhatsApp and email · keyboard and screen-reader friendly · respects "reduce motion" · prints cleanly.
 
 The weekly link check runs every Monday and can be started by hand from the Actions tab. It tests every project, app, repository, data, paper, personal and asset link, then opens or updates a `link-check` issue with anything that fails.
 
