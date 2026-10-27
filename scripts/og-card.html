@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Share card</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600&family=Young+Serif&display=swap">
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;width:1200px;height:630px;overflow:hidden}
+body{position:relative;background:#f4525f url("../assets/seeds-light.svg");color:#2a1c18;font-family:"Bricolage Grotesque","Helvetica Neue",Helvetica,Arial,sans-serif}
+.wrap{position:relative;z-index:2;height:100%;padding:58px 68px 82px;display:flex;flex-direction:column}
+.sticker{align-self:flex-start;background:#bfe5f8;border:3px solid #2a1c18;border-radius:999px;padding:7px 24px;font-size:19px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;transform:rotate(-2.5deg);box-shadow:5px 5px 0 #2a1c18}
+h1{font-family:"Young Serif",Georgia,"Times New Roman",serif;font-weight:400;font-size:98px;line-height:.96;letter-spacing:-.025em;color:#fff3df;text-shadow:6px 6px 0 #2a1c18;margin:34px 0 0;max-width:900px}
+.tag{margin:26px 0 0;max-width:780px;font-size:29px;line-height:1.18;font-weight:600;color:#dff2fc;text-shadow:3px 3px 0 #2a1c18}
+.url{margin-top:auto;align-self:flex-start;background:#fff3df;border:3px solid #2a1c18;border-radius:999px;padding:8px 20px;font-size:20px;font-weight:600;box-shadow:4px 4px 0 #2a1c18}
+.slice{position:absolute;right:62px;bottom:64px;width:270px;height:165px;z-index:1}
+.rind{position:absolute;left:0;right:0;bottom:0;height:42px;z-index:3;background:linear-gradient(#fff3df 0 8px,#3f9a4e 8px);border-top:3px solid #2a1c18}
+.rind::after{content:"";position:absolute;inset:8px 0 0;background:radial-gradient(ellipse 3px 4px at 20px 7px,#fff3df 98%,transparent) 0 0/46px 100% repeat-x;opacity:.75}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <span class="sticker">archives</span>
+  <h1>Harshini Suresha</h1>
+  <p class="tag">Projects, paper replications and sites — computational biology, machine learning and software.</p>
+  <span class="url">harshini-suresha.github.io/archives</span>
+</div>
+<svg class="slice" viewBox="0 0 270 165" aria-hidden="true">
+  <path d="M5 14 A130 130 0 0 0 265 14 Z" fill="#2a1c18"/>
+  <path d="M16 14 A119 119 0 0 0 254 14 Z" fill="#3f9a4e"/>
+  <path d="M25 14 A110 110 0 0 0 245 14 Z" fill="#fff3df"/>
+  <path d="M32 14 A103 103 0 0 0 238 14 Z" fill="#f4525f"/>
+  <g fill="#2a1c18">
+    <ellipse cx="101" cy="62" rx="5" ry="9" transform="rotate(-24 101 62)"/>
+    <ellipse cx="136" cy="91" rx="5" ry="9" transform="rotate(12 136 91)"/>
+    <ellipse cx="171" cy="57" rx="5" ry="9" transform="rotate(28 171 57)"/>
+    <ellipse cx="108" cy="112" rx="5" ry="9" transform="rotate(8 108 112)"/>
+    <ellipse cx="178" cy="103" rx="5" ry="9" transform="rotate(-18 178 103)"/>
+    <ellipse cx="143" cy="47" rx="4" ry="7" transform="rotate(48 143 47)"/>
+  </g>
+</svg>
+<div class="rind" aria-hidden="true"></div>
+</body>
+</html>

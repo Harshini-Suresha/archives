@@ -8,7 +8,7 @@
      gh  GitHub repo name           app  live Streamlit app URL (optional)
      co  Colab notebook path (optional)   dl  extra "Docking lab" URL (optional)
      dk  data link (optional)       pp  source paper URL (optional)
-     pin 1 to pin it at the top
+     shot  preview image path (optional)   pin 1 to pin it at the top
 ------------------------------------------------------------------- */
 window.SITE = {
   W: "https://harshini-suresha.github.io/",
@@ -16,10 +16,10 @@ window.SITE = {
   C: "https://colab.research.google.com/github/Harshini-Suresha/",
   tags: [["all","all"],["ml","machine learning"],["bio","biology"],["drug","drug discovery"],["cs","systems & algorithms"],["rep","replications"],["live","has live app"]],
   projects: [
-{k:"p",n:"MMP-7 Inhibition",d:"Structure-based ligand profiling of MMP-7 inhibitors, with a docking lab that runs in the browser.",t:["drug","bio"],w:"mmp7/",gh:"mmp7",app:"https://mmp7-inhibition.streamlit.app/",co:"mmp7/blob/main/notebooks/MMP7_docking.ipynb",dl:"https://harshini-suresha.github.io/mmp7/docking_lab.html",pin:1},
-{k:"p",n:"Honey Bee Genomics",d:"Genomics of behaviour in Apis mellifera, including the Amfor locus on chromosome 13.",t:["bio"],w:"honeybee-genomics/",gh:"honeybee-genomics",co:"honeybee-genomics/blob/main/analysis/amfor_analysis.ipynb",pin:1},
-{k:"p",n:"KernelSim",d:"Interactive operating-system simulator: CPU scheduling, page replacement, deadlock avoidance, race conditions and disk scheduling.",t:["cs"],w:"kernelsim/",gh:"kernelsim",app:"https://kernelsim.streamlit.app/",co:"kernelsim/blob/main/KernelSim.ipynb",pin:1},
-{k:"p",n:"ML Healthcare AI",d:"Interactive app for four supervised-learning projects: diabetes, breast cancer, heart disease and autism spectrum disorder.",t:["ml"],w:"ml-healthcare-app/",gh:"ml-healthcare-app",app:"https://ml-healthcare-ai.streamlit.app/",co:"ml-healthcare-app/blob/main/ML_Healthcare_Demo.ipynb",pin:1},
+{k:"p",n:"MMP-7 Inhibition",d:"Structure-based ligand profiling of MMP-7 inhibitors, with a docking lab that runs in the browser.",t:["drug","bio"],w:"mmp7/",gh:"mmp7",app:"https://mmp7-inhibition.streamlit.app/",co:"mmp7/blob/main/notebooks/MMP7_docking.ipynb",dl:"https://harshini-suresha.github.io/mmp7/docking_lab.html",shot:"assets/shots/mmp7.jpg",pin:1},
+{k:"p",n:"Honey Bee Genomics",d:"Genomics of behaviour in Apis mellifera, including the Amfor locus on chromosome 13.",t:["bio"],w:"honeybee-genomics/",gh:"honeybee-genomics",co:"honeybee-genomics/blob/main/analysis/amfor_analysis.ipynb",shot:"assets/shots/honeybee.jpg",pin:1},
+{k:"p",n:"KernelSim",d:"Interactive operating-system simulator: CPU scheduling, page replacement, deadlock avoidance, race conditions and disk scheduling.",t:["cs"],w:"kernelsim/",gh:"kernelsim",app:"https://kernelsim.streamlit.app/",co:"kernelsim/blob/main/KernelSim.ipynb",shot:"assets/shots/kernelsim.jpg",pin:1},
+{k:"p",n:"ML Healthcare AI",d:"Interactive app for four supervised-learning projects: diabetes, breast cancer, heart disease and autism spectrum disorder.",t:["ml"],w:"ml-healthcare-app/",gh:"ml-healthcare-app",app:"https://ml-healthcare-ai.streamlit.app/",co:"ml-healthcare-app/blob/main/ML_Healthcare_Demo.ipynb",shot:"assets/shots/ml-healthcare.jpg",pin:1},
 {k:"p",n:"3CLPro Bioactivity",d:"Machine-learning models that classify compounds as active or inactive against the SARS-CoV-2 3CLpro protease.",t:["ml","drug"],w:"3clpro-bioactivity/",gh:"3clpro-bioactivity",app:"https://3clpro-bioactivity.streamlit.app/"},
 {k:"p",n:"DataSphere-ML",d:"Three models on one synthetic e-commerce dataset in SQL, MongoDB and Neo4j style: customer value, order amount and review rating.",t:["ml"],w:"datasphere-ml/",gh:"datasphere-ml",app:"https://datasphere-ml-i9nv6eofsxkupnbfsdnqrx.streamlit.app/",co:"datasphere-ml/blob/main/datasphere_ml.ipynb"},
 {k:"p",n:"Genome Search",d:"Genome search workbench with a static site, a Streamlit app, benchmarks and real example datasets.",t:["bio","cs"],w:"genome-search",gh:"genome-search",app:"https://genome-search.streamlit.app",co:"genome-search/blob/main/notebooks/genome-search-colab.ipynb"},

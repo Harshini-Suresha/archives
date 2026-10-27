@@ -1,0 +1,33 @@
+name: Weekly link check
+
+on:
+  schedule:
+    - cron: "0 7 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - id: check
+        run: node scripts/check-links.mjs
+      - name: Report broken links
+        if: steps.check.outputs.failures != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create link-check --description "Automated weekly link check" --color d93a48 2>/dev/null || true
+          existing="$(gh issue list --state open --label link-check --limit 1 --json number --jq '.[0].number // empty')"
+          if [ -n "$existing" ]; then
+            gh issue edit "$existing" --body-file link-report.md
+          else
+            gh issue create --title "Weekly link check: broken links found" --label link-check --body-file link-report.md
+          fi

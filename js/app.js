@@ -21,13 +21,16 @@
     if (p.dl) b += btn(p.dl, 'Docking lab');
     if (p.dk) b += btn(p.dk, 'Data');
     if (p.pp) b += btn(p.pp, 'Paper');
+    var shot = p.shot
+      ? '<img class="shot" src="' + esc(p.shot) + '" alt="Screenshot of the ' + esc(p.n) + ' project website" loading="lazy" decoding="async" width="1400" height="787">'
+      : '';
     var el = document.createElement('article');
     el.className = 'proj' + (p.pin ? ' pin' : '');
     el.dataset.s = (p.n + ' ' + p.d + ' ' + p.t.map(function (x) { return LBL[x]; }).join(' ')).toLowerCase();
     el.dataset.t = p.t.concat(p.app ? ['live'] : []).join(' ');
     el.dataset.n = p.n;
     el.dataset.i = P.indexOf(p);
-    el.innerHTML =
+    el.innerHTML = shot +
       '<a class="pname" href="' + esc(W + p.w) + '" target="_blank" rel="noopener"><span>' + esc(p.n) + '</span><span class="go" aria-hidden="true">→</span></a>' +
       '<p>' + esc(p.d) + '</p><div class="tgs">' + esc(labels(p)) + '</div><div class="btns">' + b + '</div>';
     return el;
