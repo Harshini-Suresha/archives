@@ -1,6 +1,6 @@
-# Harshini Suresha · index site
+# Harshini Suresha · archives site
 
-A one-page index of projects, paper replications and personal sites, in a watermelon theme.
+A one-page archive of projects, paper replications and personal sites, in a watermelon theme.
 Plain HTML, CSS and JavaScript. No build step, no dependencies.
 
 ```
@@ -18,13 +18,13 @@ robots.txt          allow all crawlers
 
 1. Create a new empty repository on GitHub. Two common choices:
    - `Harshini-Suresha.github.io` → the site is served at `https://harshini-suresha.github.io/` (only if you don't already have a repo with that name).
-   - any other name, e.g. `index` → served at `https://harshini-suresha.github.io/index/`.
+   - any other name, e.g. `archives` → served at `https://harshini-suresha.github.io/archives/`.
 2. In a terminal, from this folder:
 
 ```bash
 git init -b main
 git add .
-git commit -m "Add index site"
+git commit -m "Add archives site"
 git remote add origin https://github.com/Harshini-Suresha/YOUR-REPO-NAME.git
 git push -u origin main
 ```
