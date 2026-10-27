@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Harshini Suresha · projects, paper replications &amp; sites</title>
+<meta name="description" content="Index of Harshini Suresha’s computational biology, machine learning and software projects, paper replications and personal sites.">
+<meta name="theme-color" content="#f4525f">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Harshini Suresha">
+<meta property="og:description" content="Projects, paper replications and sites: computational biology, machine learning and software.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600&family=Young+Serif&display=swap">
+<script>try{if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark')}catch(e){}</script>
+<link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Harshini Suresha","url":"https://harshinisuresha.me","email":"mailto:harshinisuresha7@gmail.com","sameAs":["https://github.com/Harshini-Suresha","https://harshinisuresha.tech","https://harshini-suresha.github.io/elsewhere/"]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="wrap">
+  <header class="top">
+    <span class="sticker">index</span>
+    <h1>Harshini Suresha</h1>
+    <p class="tag">Everything I’m making, minding, or meaning to start.</p>
+    <div class="status">
+      <span class="now"><i class="live" aria-hidden="true"></i>currently reproducing computational-biology papers and building project sites</span>
+      <button class="pillbtn sky" id="copy" type="button">copy email</button>
+      <button class="pillbtn" id="theme" type="button" aria-pressed="false">night mode</button>
+    </div>
+    <div class="stats" id="stats"></div>
+  </header>
+
+  <main id="main">
+  <div class="grid">
+    <section class="card c-sky s6" aria-labelledby="h-pro">
+      <h2 id="h-pro"><i>01</i>professional</h2>
+      <div class="tools">
+        <input id="q" type="search" placeholder="search projects… (press /)" aria-label="Search projects" autocomplete="off">
+        <div class="filters" id="filters" role="group" aria-label="Filter by topic"></div>
+        <div class="filters"><button class="f act" id="surprise" type="button">surprise me</button><button class="f" id="sort" type="button" aria-pressed="false">sort A–Z</button><button class="f" id="recent" type="button" aria-pressed="false" hidden>recently updated</button><button class="f" id="view" type="button" aria-pressed="false">list view</button></div>
+        <span class="count" id="count" aria-live="polite"></span>
+      </div>
+      <noscript><p>The project list needs JavaScript. Everything is also on GitHub: <a href="https://github.com/Harshini-Suresha">github.com/Harshini-Suresha</a>.</p></noscript>
+      <div class="pwrap" id="pwrap"><h3 class="sub">★ pinned</h3><div class="list" id="pinned"></div></div>
+      <h3 class="sub" id="hp">projects</h3>
+      <div class="list" id="projects"></div>
+      <h3 class="sub" id="hr">paper implementations</h3>
+      <div class="list" id="papers"></div>
+      <p class="none" id="none" hidden>No matches. Try another word or clear the filter.</p>
+    </section>
+
+    <section class="card c-rind s6" aria-labelledby="h-per">
+      <h2 id="h-per"><i>02</i>personal</h2>
+      <div class="list">
+        <a class="item" href="https://harshinisuresha.me" target="_blank" rel="noopener"><div><b>harshinisuresha.me</b></div><span class="go" aria-hidden="true">→</span></a>
+        <a class="item" href="https://harshinisuresha.tech" target="_blank" rel="noopener"><div><b>harshinisuresha.tech</b></div><span class="go" aria-hidden="true">→</span></a>
+        <a class="item" href="https://harshinisuresha.pages.dev" target="_blank" rel="noopener"><div><b>harshinisuresha.pages.dev</b></div><span class="go" aria-hidden="true">→</span></a>
+        <a class="item" href="https://harshini-suresha.github.io/elsewhere/" target="_blank" rel="noopener"><div><b>elsewhere</b></div><span class="go" aria-hidden="true">→</span></a>
+        <!-- Add the real link: change <div class="item idle"> to <a class="item" href="URL" target="_blank" rel="noopener"> and add <span class="go" aria-hidden="true">→</span> before the closing tag -->
+        <div class="item idle"><div><b>consumedlog</b><small>link coming soon</small></div></div>
+        <div class="item idle"><div><b>get in touch</b><small>link coming soon</small></div></div>
+        <div class="item idle"><div><b>inpassing</b><small>link coming soon</small></div></div>
+      </div>
+    </section>
+  </div>
+  </main>
+
+  <footer>
+    <span>© 2026 Harshini Suresha. All rights reserved.</span>
+    <span>Contact: <a href="mailto:harshinisuresha7@gmail.com">harshinisuresha7@gmail.com</a></span>
+    <span>Visit: <a href="https://harshinisuresha.me" target="_blank" rel="noopener">harshinisuresha.me</a></span>
+  </footer>
+</div>
+<div class="rind" aria-hidden="true"></div>
+<button class="totop" id="top" type="button" hidden aria-label="Back to top">↑</button>
+
+<script src="js/projects.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
