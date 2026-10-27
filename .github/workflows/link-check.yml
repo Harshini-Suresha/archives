@@ -31,3 +31,13 @@ jobs:
           else
             gh issue create --title "Weekly link check: broken links found" --label link-check --body-file link-report.md
           fi
+      - name: Close resolved issue
+        if: steps.check.outputs.failures == '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create link-check --description "Automated weekly link check" --color d93a48 2>/dev/null || true
+          existing="$(gh issue list --state open --label link-check --limit 1 --json number --jq '.[0].number // empty')"
+          if [ -n "$existing" ]; then
+            gh issue close "$existing" --comment "All links pass again."
+          fi
